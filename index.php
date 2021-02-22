@@ -17,7 +17,7 @@ if(isset($_POST['insert'])){
   $add = "INSERT INTO std (RegNo , Name , Dob , Mobile , Email , Address) VALUES('$regno','$name','$dob','$contact','$email','$address')";
   if($con->query($add)==True)
   {
-     $insert = true;
+     header('location:view.php');
      
   }
   else{
